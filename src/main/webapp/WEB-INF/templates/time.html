@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Current UTC Time</title>
+    <style> body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+     h1, p {
+         text-align: center;
+     }
+    </style>
+</head>
+
+<body>
+<div>
+
+    <h1>Current UTC Time</h1>
+    <p>Time: <span th:text="${currentTime}"></span></p>
+    <p>Timezone: <span th:text="${timezone}"></span></p>
+
+</div>
+</body>
+
+</html>
